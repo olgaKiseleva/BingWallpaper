@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kusochekmela.bingwallpaper.MainActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/button_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="startService"
+        android:text="@string/start_button_text"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp" />
+
+    <Button
+        android:id="@+id/button_stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="stopService"
+        android:text="@string/stop_button_text"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="56dp"
+        tools:text="@string/stop_button_text" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="viewLog"
+        android:text="@string/log_button_text" />
+
+    <EditText
+        android:id="@+id/logEditText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:singleLine="false" />
+
+</LinearLayout>
